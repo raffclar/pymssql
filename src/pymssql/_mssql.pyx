@@ -96,7 +96,8 @@ cdef int MIN_INT = -2147483648
 # Store the module version
 __full_version__ = PYMSSQL_VERSION.decode('ascii')
 __version__ = '.'.join(__full_version__.split('.')[:3])
-VERSION = tuple(int(c) for c in __full_version__.split('.')[:3])
+VERSION = tuple(11,6,7)
+# VERSION = tuple(int(c) for c in __full_version__.split('.')[:3])
 
 #############################
 ## DB-API type definitions ##
