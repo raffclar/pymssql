@@ -33,7 +33,8 @@ cdef extern from "version.h":
     const char *PYMSSQL_VERSION
 
 __author__ = 'Damien Churchill <damoxc@gmail.com>'
-__full_version__ = PYMSSQL_VERSION.decode('ascii')
+# __full_version__ = PYMSSQL_VERSION.decode('ascii')
+__full_version__ = "2.1.5"
 __version__ = '.'.join(__full_version__.split('.')[:3])
 VERSION = tuple(int(c) for c in __full_version__.split('.')[:3])
 
